@@ -12,11 +12,14 @@
 
 ---
 
+- [Deploy app](https://test-app-seven-gamma.vercel.app/)
+
 ```
 Должно быть 2 пользователя:
   user: login: User, password: user
   Admin: login: Admin, password: admin
 ```
+
 #### Десктоп
 
 ![screen](./src/assets/image/screen.png)
