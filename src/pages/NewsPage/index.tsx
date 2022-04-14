@@ -45,14 +45,16 @@ const NewsPage: FC = React.memo(() => {
 
   return (
     <div className="news">
-      <div className="news__search">
-        <Field
-          className="news__input"
-          onChange={onChangeSearch}
-          value={search}
-          placeholder="Поиск..."
-        />
-      </div>
+      {isAuth && (
+        <div className="news__search">
+          <Field
+            className="news__input"
+            onChange={onChangeSearch}
+            value={search}
+            placeholder="Поиск..."
+          />
+        </div>
+      )}
       <div className="news__create">
         <h4>{search ? `Поиск по запросу: ${search}` : "Все Новости"}</h4>
         {isAuth && (
