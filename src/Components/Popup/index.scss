@@ -1,0 +1,45 @@
+.popup {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid #f1b84f;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  h3 {
+    font-size: 22px;
+    font-weight: 300;
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    &-btn {
+      width: 100px;
+      border: none;
+      outline: none;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #f1b84f;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.auth {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+
+  &__back {
+    cursor: pointer;
+    font-size: 12px;
+
+    &:hover {
+      color: #f1b84f;
+    }
+  }
+
+  &__field {
+    outline: none;
+    border: 1px solid #f1b84f;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: #f1b84f;
+  }
+
+  &__error {
+    font-size: 10px;
+    color: red;
+    text-align: center;
+  }
+
+  &__btn {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f1b84f;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}

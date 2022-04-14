@@ -1,0 +1,40 @@
+.create {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+
+  &__input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid rgba(209, 207, 205, 0.1);
+    font-size: 18px;
+    outline: none;
+    border-radius: 10px;
+    background-color: #ffeece;
+
+    &:focus {
+      border: 1px solid #eb9b08;
+    }
+  }
+
+  &__error {
+    text-align: center;
+    color: #df0000;
+    font-size: 12px;
+  }
+
+  &__btn {
+    padding: 1rem;
+    background-color: #fbcf7e;
+    color: #000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
